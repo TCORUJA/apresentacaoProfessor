@@ -1,0 +1,51 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body{
+	background:url(img/background/Background.png) repeat-x fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-x: hidden;
+  /* background-color: #f7f7f7; */
+  font-family: Arial, Helvetica, sans-serif;
+  word-wrap: break-word;
+}
+
+.texto{
+  word-wrap: break-word;
+}
+
+.informacoes{
+  width: 100%;
+  margin: 2.5px auto;
+  padding: 15px 40px;
+  display: grid;
+  grid-template-columns: 1fr;
+  border-radius: 8px;
+}
+.informacao{
+  margin: auto;
+}
+#informacao2, #informacao4{
+  margin: auto;
+  padding: 10px;
+}
+
+.linha{
+  padding: 5px;
+}
+textarea{
+  resize: none;
+}
+
+.botao{
+  margin: auto;
+}
+
+
+
+.displayNone{
+  display: none;
+}
