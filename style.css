@@ -2,7 +2,6 @@
   box-sizing: border-box;
   margin: 0;
 }
-
 body{
 	background:url(img/background/Background.png) repeat-x fixed;
   background-repeat: no-repeat;
@@ -12,40 +11,95 @@ body{
   font-family: Arial, Helvetica, sans-serif;
   word-wrap: break-word;
 }
+input{
+  border: solid 1px #00000000;
+}
+
+
+
+.conteudoTopo{
+  width: 100vw;
+  margin: 0 auto;
+  padding: 10px 25px;
+	background:url(img/background/BackgroundTopo2.png);
+  /* background-color: #FF7514; */
+  background-size: cover;
+  background-position: center;
+}
+.nomeTopo{
+  font-size: 32px;
+  text-align: center;
+  padding: 6px 0 6px 0;
+  font-weight: bolder;
+}
+
+
 
 .texto{
   word-wrap: break-word;
 }
 
 .informacoes{
-  width: 100%;
-  margin: 2.5px auto;
-  padding: 15px 40px;
+  width: 70vw;
+  margin: 20px auto;
+  padding: 15px 10px;
   display: grid;
   grid-template-columns: 1fr;
-  border-radius: 8px;
+  border-radius: 15px;
 }
-.informacao{
+.div{
   margin: auto;
 }
-#informacao2, #informacao4{
+#div2, #div4{
   margin: auto;
   padding: 10px;
 }
 
 .linha{
   padding: 5px;
+  padding-top: 15px;
 }
 textarea{
   resize: none;
 }
-
-.botao{
-  margin: auto;
+.widthGeral{
+  width: 65vw;
 }
 
+.botao{
+  margin: 5px auto;
+  padding: 5px 10px;
+  font-weight: bolder;
+  border-radius: 50px;
+}
+
+.linhaDivisoria{
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
 
 
 .displayNone{
   display: none;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 915px){
+  .widthGeral{
+    width: 800px;
+  }
+  #div1, #div3{
+    overflow: scroll;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 815px){
+  #div1, #div3{
+    overflow: scroll;
+    width: 100%;
+  }
 }

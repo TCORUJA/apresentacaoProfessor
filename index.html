@@ -7,28 +7,37 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
   <link rel="icon" href="img/icons/iconGuia.png"type="image/x-icon">
-  <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="cores.css">
 
-  <title>UNISUAM - EAD | Criar apresentação do professor</title>
+  <title>UNISUAM - EAD | Criação da Apresentação do Professor</title>
 </head>
 
 <body>
-  <section class="informacoes">
-    <div class="informacao" id="informacao1">
-      <p class="linha"><span class="nomeLinha">Nome do professor:</span><br><textarea class="textoLinha" id="texto1" name="" style="width: 90vw; height: 25px;"></textarea></p>
-      <p class="linha"><span class="nomeLinha">Descrição do Currículo:</span><br><textarea class="textoLinha" id="texto2" name="" style="width: 90vw; height: 300px;"></textarea></p>
-      <p class="linha"><span class="nomeLinha">Vídeo do professor:</span><br><textarea class="textoLinha" id="texto3" name="" style="width: 90vw; height: 25px;"></textarea></p>
+  <section class="conteudoTopo">
+    <h1 class="nomeTopo txtBranco">Criação da Apresentação do Professor</h1>
+  </section>
+  <section class="informacoes bgBrancoClaro1">
+    <div class="div" id="div1">
+      <p class="linha"><span class="nomeLinha">Nome do professor:</span></p>
+      <p><input class="textoLinha widthGeral bdAzulClaroSuam" id="texto1" name="" style="height: 25px;" value="thiago de Moraes moreira"/></p>
+      <p class="linha"><span class="nomeLinha">Descrição do Currículo:</span></p>
+      <p><textarea class="textoLinha widthGeral bdAzulClaroSuam" id="texto2" name="" style="height: 300px;"></textarea></p>
+      <p class="linha"><span class="nomeLinha">Vídeo do professor:</span></p>
+      <p><input class="textoLinha widthGeral bdAzulClaroSuam" id="texto3" name="" style="height: 25px;"/></p>
     </div>
-    <div class="informacao" id="informacao2">
-      <input type="button" value="CRIAR APRESENTAÇÃO" id="botao" onclick="criarApresentacao()">
+    <div class="div" id="div2">
+      <input class="botao bgLaranjaEscuro1 bdLaranjaEscuro1 txtBranco" id="botao" type="button" value="CRIAR APRESENTAÇÃO" onclick="criarApresentacao()">
     </div>
-    <div class="informacao displayNone" id="informacao3">
-      <br><hr><br>
-      <p><span>Copiar o HTML:</span><br><textarea class="desabilitar" id="copiar" style="width: 90vw; height: 150px;"></textarea></p>
+    <div class="div displayNone" id="div3">
+      <hr class="linhaDivisoria">
+      <p class="linha"><span class="nomeLinha">Copiar o HTML:</span></p>
+      <p><textarea class="desabilitar widthGeral bdAzulClaroSuam" id="copiar" style="height: 150px;"></textarea></p>
     </div>
-    <div class="informacao displayNone" id="informacao4">
-      <input id="botao" type="button" value="COPIAR TUDO" onclick="copiarTexto()">
+    <div class="div displayNone" id="div4">
+      <input class="botao bgLaranjaEscuro1 bdLaranjaEscuro1 txtBranco" id="botao" type="button" value="COPIAR TUDO" onclick="copiarTexto()">
     </div>
   </section>
   
