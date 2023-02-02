@@ -12,14 +12,9 @@ body{
   word-wrap: break-word;
 }
 input, textarea{
-  border-radius: 5px;
-}
-input {
   border: solid 1px #00000000;
   border-radius: 5px;
-  cursor: pointer;
 }
-
 
 
 .conteudoTopo{
@@ -76,6 +71,7 @@ textarea{
   padding: 5px 10px;
   font-weight: bolder;
   border-radius: 50px;
+  cursor: pointer;
 }
 
 #escolhaDiv{
@@ -90,11 +86,12 @@ textarea{
   padding: 10px 0px;
   font-weight: bolder;
   border-radius: 50px;
-  font-size: 20px;
+  font-size: 18px;
   width: 350px;
 }
-#escolha .botao:hover{
-  
+.botao:hover{
+    background-color: #EA5A33;
+    border-color: #EA5A33;
 }
 
 
