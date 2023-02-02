@@ -12,8 +12,12 @@ body{
   word-wrap: break-word;
 }
 input, textarea{
+  border-radius: 5px;
+}
+input {
   border: solid 1px #00000000;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 
@@ -51,7 +55,7 @@ input, textarea{
 .div{
   margin: auto;
 }
-#div2, #div4{
+#div1_2, #div1_4,#div2_2, #div2_4{
   margin: auto;
   padding: 10px;
 }
@@ -74,6 +78,26 @@ textarea{
   border-radius: 50px;
 }
 
+#escolhaDiv{
+  margin: 20px auto;
+  padding: 15px 10px;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+}
+#escolha .botao{
+  margin: 5px 50px;
+  padding: 10px 0px;
+  font-weight: bolder;
+  border-radius: 50px;
+  font-size: 20px;
+  width: 350px;
+}
+#escolha .botao:hover{
+  
+}
+
+
 .linhaDivisoria{
   margin-top: 10px;
   margin-bottom: 5px;
@@ -93,14 +117,14 @@ textarea{
   .widthGeral{
     width: 800px;
   }
-  #div1, #div3{
-    overflow: scroll;
+  #div1_1, #div1_3,#div2_1, #div2_3{
+    overflow-x: scroll;
     width: 100%;
   }
 }
 @media only screen and (max-width: 815px){
-  #div1, #div3{
-    overflow: scroll;
+  #div1_1, #div1_3,#div2_1, #div2_3{
+    overflow-x: scroll;
     width: 100%;
   }
 }
