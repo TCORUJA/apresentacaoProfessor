@@ -13,7 +13,7 @@ function criarApresentacao2_0() {
 function criarApresentacao1_1() {
     var texto1_1 = document.getElementById('texto1_1').value;
     var texto1_2 = document.getElementById('texto1_2').value.replace(/(\r\n|\n|\r)/gm, "</p>\n\<p  style='text-align: left; color: #444444;'>").replaceAll("<p  style='text-align: left; color: #444444;'></p>", "<br>");
-    var texto1_3 = document.getElementById('texto1_3').value;
+    var texto1_3 = document.getElementById('texto1_3').value.replaceAll("&ab_channel","_channel");
     if (texto1_1 == "" & texto1_2 == "" & texto1_3 == "") {
         window.alert("Verifique se estão vazios os campos: \n\n\tNome do professor\n\tDescrição do Currículo\n\tVídeo do professor");
     }
@@ -105,7 +105,7 @@ function copiarTexto1_1() {
 function criarApresentacao2_1() {
     var texto2_1 = document.getElementById('texto2_1').value;
     var texto2_2 = document.getElementById('texto2_2').value.replace(/(\r\n|\n|\r)/gm, "</p>\n\<p  style='text-align: left; color: #444444;'>").replaceAll("<p  style='text-align: left; color: #444444;'></p>", "<br>");
-    var texto2_3 = document.getElementById('texto2_3').value;
+    var texto2_3 = document.getElementById('texto2_3').value.replaceAll("&ab_channel","_channel");
     if (texto2_1 == "" & texto2_2 == "" & texto2_3 == "") {
         window.alert("Verifique se estão vazios os campos: \n\n\tNome do coordenador\n\tDescrição do Currículo\n\tVídeo do coordenador");
     }
